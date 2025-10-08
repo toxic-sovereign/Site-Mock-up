@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    max-width: 100vh;
+    max-width: 100vw;
     overflow-x: hidden;
 }
 
@@ -122,15 +122,53 @@ header {
     height: calc(100vh - 80px);
 }
 
-.header__container {
-    height: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    height: 100%;
+.header__description {
+    width: 40%;
+}
+
+.header__description--para {
+    margin: 32px 0;
+}
+
+.header__email {
+    width: 100%;
+    max-width: 448%;
+    height: 68px;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    text-align: center;
-    padding: 0 24px;
+}
+
+.header__email--input {
+    width: 100%;
+    border-radius: 500px;
+    border: 2px solid rgb(229, 231, 235);
+    padding: 20px 192px 20px 32px;
+    color: rgb(36, 62, 99);
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    transition: border-color 300ms;
+}
+
+.header__email--btn {
+    z-index: 2;
+    margin: 8px;
+    height: calc(100% - 16px);
+    border-radius: 500px;
+    width: 160px;
+    border: none;
+    background-color: #6415ff;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all 300ms ease;
+}
+
+.header__img {
+    width: calc(100% - 40%);
 }

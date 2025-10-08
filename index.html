@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Practise Project</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -11,19 +11,21 @@
     <section id="landing">
         <nav>
             <div class="row nav__row">
-                <div class="nav__container">
+                <div class="nav__logo">
                     <img class="nav__logo--img" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="logo">
                     <div class="nav__logo--title">Treact</div>
-                    <ul class="nav__links">
-                        <li><a href="#" class="nav__link">About</a></li>
-                        <li><a href="#" class="nav__link">Blog</a></li>
-                        <li><a href="#" class="nav__link">Pricing</a></li>
-                        <li><a href="#" class="nav__link">Contact Us</a></li>
-                        <li><a href="#" class="nav__link">Login</a></li>
-                        <li><a href="#" class="nav__link nav__links--primary">Sign Up</a></li>
-                    </ul>
-                    </div>
                 </div>
+                <ul class="nav__links">
+                    <li><a href="#" class="nav__link">About</a></li>
+                    <li><a href="#" class="nav__link">Blog</a></li>
+                    <li><a href="#" class="nav__link">Pricing</a></li>
+                    <li><a href="#" class="nav__link">Contact Us</a></li>
+                    <li><a href="#" class="nav__link">Login</a></li>
+                    <li><a href="#" class="nav__link"><button>Sign Up</button></a></li>
+                </ul>
+                <button class="btn__menu" onclick="openMenu()">
+                    
+                </button>
             </div>
         </nav>
         <header>
@@ -31,43 +33,22 @@
                 <div class="row">
                     <div class="header__description">
                         <h1>Beautiful React Templates for <span class="purple">for you.</span></h1>
-                        <p class="header__description--para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
-                        <div class="header__email">
-                            <input type="text" class="header__email--input" placeholder="Enter your email address">
-                            <button class="header__email--btn">Get Started</button>
+                        <div class="header__description--wrapper">
+                            <p class="header__description--para">Our templates are easy to setup, understand and customize. Fully modular components with a variety of pages and components.</p>
+                            <div class="header__email">
+                                <input type="text" class="header__email--input" placeholder="Enter your email address">
+                                <button class="header__email--btn">Get Started</button>
+                            </div>
+                            <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
+                            <img src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" class="header__customers" alt="">
                         </div>
-                        <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
-                        <img src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" class="header__customers" alt="">
                     </div>
-                    <div class="header__image--wrapper">
+                    <figure class="header__image--wrapper">
                         <img src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" class="header__img" alt="header image">
-                    </div>
+                    </figure>
                 </div>
+            <form action="">
         </header>
     </section>
 </body>
 </html>
-
-
-
-<button class="btn__menu" onclick="openMenu()">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                    <div class="menu__backdrop">
-                        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-                            <i class="fas fa-times"></i>
-                        </button>
-                        <ul class="menu__links">
-                            <li class="menu__list">
-                                <a href="#" class="menu__link" onclick="closeMenu()">About</a></li>
-                            <li class="menu__list">
-                                <a href="#" class="menu__link" onclick="closeMenu()">Blog</a></li>
-                            <li class="menu__list">
-                                <a href="#" class="menu__link" onclick="closeMenu()">Pricing</a></li>
-                            <li class="menu__list">
-                                <a href="#" class="menu__link" onclick="closeMenu()">Contact Us</a></li>
-                            <li class="menu__list">
-                                <a href="#" class="menu__link" onclick="closeMenu()">Login</a></li>
-                            <li class="menu__list">
-                                <a href="#" class="menu__link" onclick="closeMenu()">Sign Up</a></li>
-                        </ul>
